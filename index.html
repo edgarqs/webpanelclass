@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" id="theme">
+    <script src="https://kit.fontawesome.com/43ea8a9b5d.js" crossorigin="anonymous"></script> <!--fontawesome-->
+    <link rel="icon" type="image/png" href="image/pc.png" />
+    <title>Edgar</title>
+</head>
+
+<body><br><br><br><br><br><br><br><br><br>
+    <center>
+        <a href="https://gmail.com" target="_blank"><img src="image/logo_gmail.png"></a>
+        <a href="https://drive.google.com" target="_blank"><img src="image/logo_drive.png"></a>
+
+        <br><br><br><br>
+        <a class="boton" target="_blank" href="https://login.copernic.cat">INTERNET</a>
+        <a class="boton" target="_blank" href="https://campus.copernic.cat">CAMPUS</a>
+        <a class="boton" target="_blank" href="https://gassist.copernic.cat">GASSIST</a>
+    
+        <br><br><br><br>
+        <div class="linea"></div>
+        <a class="boton" target="_blank" href="file:///home/edgar/Documentos/">DOCUMENTOS</a>
+    </center>
+    
+    <footer>
+        <a href="info.html" id="info">&nbsp&nbsp&nbsp © Edgar Quirante 2021</a>&nbsp&nbsp&nbsp
+        <button onclick="switchSheet()" id="theme" class="fas fa-sun"></button>
+    </footer>
+
+<!--SCRIPT CLARO/OSCURO-->
+<script>
+    function switchSheet() {
+        let theme = document.getElementById("theme");
+      
+        if (theme.getAttribute("href") == "style_white.css") {
+          theme.href = "style.css";
+        } else {
+          theme.href = "style_white.css";
+        }
+      }
+    </script>
+    
+<!--VENTANA EMERGENTE
+<div class="window-notice" id="window-notice">
+    <div class="content">
+        <div class="content-text">WebPanel V 3.1 [Beta].
+        <a href="https://github.com/edgarqs">GitHub.</a></div>
+        <div class="content-buttons"><a href="#" id="close-button">Cerrar</a></div>
+    </div>
+</div>
+    <script>
+        let close_button = document.getElementById('close-button');
+    close_button.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("window-notice").style.display = "none";
+    });
+</script>-->
+
+</body>
+</html>
